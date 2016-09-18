@@ -2,6 +2,7 @@
 
 //  2.)  Use a jQuery to hide all of the answers to all the questions.
 $('.answer').hide();
+$('.cheat').hide();
 
 /*  3.)  Write code to show the answer when hovering over a flash card, and hide it when the mouse leaves.
     Find the approriate event on the jQuery API page to trigger an action on hover https://api.jquery.com/category/events/
@@ -22,5 +23,7 @@ $('.flash-card').hover(
 $(".cheat-button").click(
   function(){
     $('.answer').toggle();
+    $('.show').toggle();
+    $('.cheat').toggle();
   }
 );
