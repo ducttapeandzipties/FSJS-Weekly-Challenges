@@ -1,4 +1,5 @@
 function openBlock (id) {
+  console.log("chacha")
     var block = document.getElementById(id);
     var blocks = document.getElementById("main_content").getElementsByTagName("div");
 
@@ -6,7 +7,7 @@ function openBlock (id) {
         blocks[y].style.display = "none";
     }
     block.style.display = "block";
-    
+
     // TODO: remove the "active" class from all of the li elements inside the menu
     // TODO: add the "active" class to the li element that contains the link that was clicked
 
@@ -16,4 +17,3 @@ function openBlock (id) {
 
 
 // TODO: set up the tooltip plugin on all of the links in the menu
-
