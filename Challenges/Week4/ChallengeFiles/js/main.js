@@ -27,3 +27,4 @@ $("li").hover(
 
 
 // TODO: set up the tooltip plugin on all of the links in the menu
+$('#menu a').tooltip();
