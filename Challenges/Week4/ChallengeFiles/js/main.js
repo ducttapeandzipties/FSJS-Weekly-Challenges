@@ -1,5 +1,4 @@
 function openBlock (id) {
-  console.log("chacha")
     var block = document.getElementById(id);
     var blocks = document.getElementById("main_content").getElementsByTagName("div");
 
@@ -9,8 +8,6 @@ function openBlock (id) {
     block.style.display = "block";
 
     $( "li" ).click(function() {
-        console.log("chooch");
-        console.log( this );
         $("li").removeClass("active");    // remove active class from clicked menu item
         $( this ).addClass("active");
     });
@@ -26,5 +23,7 @@ $("li").hover(
 );
 
 
-// TODO: set up the tooltip plugin on all of the links in the menu
-$('#menu a').tooltip();
+$('#menu a').tooltip({        //select menu links for tooltip
+  title: "fancy tooltip",     //tooltip plugin options
+  delay: 1000
+});
