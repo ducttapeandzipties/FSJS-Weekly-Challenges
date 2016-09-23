@@ -14,12 +14,16 @@ function openBlock (id) {
         $("li").removeClass("active");    // remove active class from clicked menu item
         $( this ).addClass("active");
     });
-    // TODO: remove the "active" class from all of the li elements inside the menu
-    // TODO: add the "active" class to the li element that contains the link that was clicked
 
 }
 
-// TODO: add the "hover" class to the menu items when you hover over them
+$("li").hover(
+  function() {
+    $(this).addClass("hover");     // add hover class to menu item
+  }, function() {
+    $(this).removeClass("hover");   // remove hover class when pointer leaves
+  }
+);
 
 
 // TODO: set up the tooltip plugin on all of the links in the menu
