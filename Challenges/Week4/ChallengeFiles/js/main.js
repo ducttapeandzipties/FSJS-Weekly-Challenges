@@ -11,7 +11,8 @@ function openBlock (id) {
     $( "li" ).click(function() {
         console.log("chooch");
         console.log( this );
-        $( "li" ).removeClass( "active");    // remove active class from clicked menu item
+        $("li").removeClass("active");    // remove active class from clicked menu item
+        $( this ).addClass("active");
     });
     // TODO: remove the "active" class from all of the li elements inside the menu
     // TODO: add the "active" class to the li element that contains the link that was clicked
